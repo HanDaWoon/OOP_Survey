@@ -55,7 +55,13 @@ namespace OOP_Survey
                 {
                     if (id == row["id"].ToString())
                     {
-                        if (pw == row["pw"].ToString()) MessageBox.Show("로그인에 성공했습니다.");
+                        if (pw == row["pw"].ToString())
+                        {
+                            MessageBox.Show("로그인에 성공했습니다.");
+                            this.Hide();
+                            SurveyPage surveyPage = new SurveyPage();
+                            surveyPage.Show();
+                        }
                         else MessageBox.Show("비밀번호가 일치하지 않습니다. 확인 후 다시 입력해주세요.");
                     }
                 }
@@ -65,7 +71,5 @@ namespace OOP_Survey
                 MessageBox.Show("사용자 정보가 없습니다.");
             }
         }
-
-        
     }
 }

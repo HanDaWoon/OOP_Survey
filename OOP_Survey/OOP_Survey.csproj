@@ -99,6 +99,18 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="DBConf.cs" />
+    <Compile Include="QBox.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="QBox.Designer.cs">
+      <DependentUpon>QBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SurveyPage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SurveyPage.Designer.cs">
+      <DependentUpon>SurveyPage.cs</DependentUpon>
+    </Compile>
     <Compile Include="LoginPage.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -117,6 +129,9 @@
     <EmbeddedResource Include="LoginPage.resx">
       <DependentUpon>LoginPage.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="QBox.resx">
+      <DependentUpon>QBox.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="SignUpPage.resx">
       <DependentUpon>SignUpPage.cs</DependentUpon>
     </EmbeddedResource>
@@ -129,6 +144,9 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="SurveyPage.resx">
+      <DependentUpon>SurveyPage.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

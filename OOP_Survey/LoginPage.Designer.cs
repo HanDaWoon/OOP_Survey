@@ -138,7 +138,7 @@
             this.Btn_signup.UseSelectable = true;
             this.Btn_signup.Click += new System.EventHandler(this.Btn_signup_Click);
             // 
-            // FirstPage
+            // LoginPage
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -149,8 +149,8 @@
             this.Controls.Add(this.Label_password);
             this.Controls.Add(this.Label_id);
             this.Controls.Add(this.Btn_login);
-            this.Name = "FirstPage";
-            this.Text = "Survey";
+            this.Name = "LoginPage";
+            this.Text = "Login";
             this.Load += new System.EventHandler(this.FirstPage_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
