@@ -11,7 +11,7 @@ namespace OOP_Survey
     enum eTName : int { _user }
     internal class DBConf
     {
-        public static string Database = "Servey";
+        public static string Database = "oop_survey";
         public static string Server = "13.209.213.208";
         public static string Port = "53367";
         public static string UserID = "oop";

@@ -99,11 +99,11 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="DBConf.cs" />
-    <Compile Include="QBox.cs">
+    <Compile Include="QBoxUserControl.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="QBox.Designer.cs">
-      <DependentUpon>QBox.cs</DependentUpon>
+    <Compile Include="QBoxUserControl.Designer.cs">
+      <DependentUpon>QBoxUserControl.cs</DependentUpon>
     </Compile>
     <Compile Include="SurveyPage.cs">
       <SubType>Form</SubType>
@@ -129,8 +129,8 @@
     <EmbeddedResource Include="LoginPage.resx">
       <DependentUpon>LoginPage.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="QBox.resx">
-      <DependentUpon>QBox.cs</DependentUpon>
+    <EmbeddedResource Include="QBoxUserControl.resx">
+      <DependentUpon>QBoxUserControl.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="SignUpPage.resx">
       <DependentUpon>SignUpPage.cs</DependentUpon>

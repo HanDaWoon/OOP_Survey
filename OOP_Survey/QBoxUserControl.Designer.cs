@@ -1,6 +1,6 @@
 ﻿namespace OOP_Survey
 {
-    partial class QBox
+    partial class QBoxUserControl
     {
         /// <summary> 
         /// Required designer variable.
@@ -28,30 +28,41 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.Q1Box = new System.Windows.Forms.GroupBox();
+            this.QBox = new System.Windows.Forms.GroupBox();
+            this.CreateChoice = new MetroFramework.Controls.MetroButton();
             this.QNumOfChoice = new System.Windows.Forms.NumericUpDown();
             this.QType = new MetroFramework.Controls.MetroComboBox();
             this.QTitle = new MetroFramework.Controls.MetroTextBox();
             this.QIdx = new MetroFramework.Controls.MetroLabel();
-            this.Q1Box.SuspendLayout();
+            this.ChoiceTitlePanel = new System.Windows.Forms.FlowLayoutPanel();
+            this.QBox.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.QNumOfChoice)).BeginInit();
             this.SuspendLayout();
             // 
-            // Q1Box
+            // QBox
             // 
-            this.Q1Box.AutoSize = true;
-            this.Q1Box.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.Q1Box.Controls.Add(this.QNumOfChoice);
-            this.Q1Box.Controls.Add(this.QType);
-            this.Q1Box.Controls.Add(this.QTitle);
-            this.Q1Box.Controls.Add(this.QIdx);
-            this.Q1Box.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.Q1Box.Location = new System.Drawing.Point(0, 0);
-            this.Q1Box.Name = "Q1Box";
-            this.Q1Box.Size = new System.Drawing.Size(449, 61);
-            this.Q1Box.TabIndex = 11;
-            this.Q1Box.TabStop = false;
-            this.Q1Box.Text = "QIdx";
+            this.QBox.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.QBox.Controls.Add(this.ChoiceTitlePanel);
+            this.QBox.Controls.Add(this.CreateChoice);
+            this.QBox.Controls.Add(this.QNumOfChoice);
+            this.QBox.Controls.Add(this.QType);
+            this.QBox.Controls.Add(this.QTitle);
+            this.QBox.Controls.Add(this.QIdx);
+            this.QBox.Location = new System.Drawing.Point(0, 0);
+            this.QBox.Name = "QBox";
+            this.QBox.Size = new System.Drawing.Size(612, 101);
+            this.QBox.TabIndex = 11;
+            this.QBox.TabStop = false;
+            this.QBox.Text = "QIdx";
+            // 
+            // CreateChoice
+            // 
+            this.CreateChoice.Location = new System.Drawing.Point(452, 20);
+            this.CreateChoice.Name = "CreateChoice";
+            this.CreateChoice.Size = new System.Drawing.Size(55, 21);
+            this.CreateChoice.TabIndex = 13;
+            this.CreateChoice.Text = "Create";
+            this.CreateChoice.UseSelectable = true;
             // 
             // QNumOfChoice
             // 
@@ -87,7 +98,6 @@
             this.QType.Size = new System.Drawing.Size(121, 29);
             this.QType.TabIndex = 11;
             this.QType.UseSelectable = true;
-            this.QType.SelectedIndexChanged += new System.EventHandler(this.QType_SelectedIndexChanged);
             // 
             // QTitle
             // 
@@ -124,36 +134,45 @@
             // 
             // QIdx
             // 
+            this.QIdx.AutoSize = true;
             this.QIdx.FontSize = MetroFramework.MetroLabelSize.Tall;
             this.QIdx.FontWeight = MetroFramework.MetroLabelWeight.Regular;
             this.QIdx.Location = new System.Drawing.Point(7, 12);
             this.QIdx.Name = "QIdx";
-            this.QIdx.Size = new System.Drawing.Size(20, 29);
+            this.QIdx.Size = new System.Drawing.Size(0, 0);
             this.QIdx.TabIndex = 9;
-            this.QIdx.Text = "1.";
             // 
-            // QBox
+            // ChoiceTitlePanel
+            // 
+            this.ChoiceTitlePanel.Location = new System.Drawing.Point(7, 48);
+            this.ChoiceTitlePanel.Name = "ChoiceTitlePanel";
+            this.ChoiceTitlePanel.Size = new System.Drawing.Size(599, 40);
+            this.ChoiceTitlePanel.TabIndex = 14;
+            // 
+            // QBoxUserControl
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSize = true;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.Controls.Add(this.Q1Box);
-            this.Name = "QBox";
-            this.Size = new System.Drawing.Size(449, 61);
-            this.Q1Box.ResumeLayout(false);
+            this.Controls.Add(this.QBox);
+            this.Name = "QBoxUserControl";
+            this.Size = new System.Drawing.Size(615, 104);
+            this.QBox.ResumeLayout(false);
+            this.QBox.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.QNumOfChoice)).EndInit();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
         #endregion
 
-        private System.Windows.Forms.GroupBox Q1Box;
+        private System.Windows.Forms.GroupBox QBox;
         private System.Windows.Forms.NumericUpDown QNumOfChoice;
         private MetroFramework.Controls.MetroComboBox QType;
         private MetroFramework.Controls.MetroTextBox QTitle;
         private MetroFramework.Controls.MetroLabel QIdx;
+        private MetroFramework.Controls.MetroButton CreateChoice;
+        private System.Windows.Forms.FlowLayoutPanel ChoiceTitlePanel;
     }
 }

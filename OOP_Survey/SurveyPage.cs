@@ -27,8 +27,7 @@ namespace OOP_Survey
         private void metroButton1_Click(object sender, EventArgs e)
         {
             Qnum++;
-            QBox qBox = new QBox();
-            
+            QBoxUserControl qBox = new QBoxUserControl(Qnum);
             flowLayoutPanel1.Controls.Add(qBox);
         }
 
