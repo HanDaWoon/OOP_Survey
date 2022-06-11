@@ -27,6 +27,7 @@ namespace OOP_Survey
             LoginPage._db.Insert(DBConf.Tables[(int)eTName._user], value);
             LoginPage.LoadUserInfo();
             MessageBox.Show("회원가입을 완료했습니다. 등록한 아이디로 로그인 해주세요.");
+            Close();
         }
 
         public static bool isValidID(string Text)
