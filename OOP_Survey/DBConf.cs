@@ -16,9 +16,10 @@ namespace OOP_Survey
         public static string Port = "53367";
         public static string UserID = "oop";
         public static string UserPassword = "oop";
-        public static string ConnectionAddr = string.Format("Server={0};Port={1};Database={2};Uid={3};Pwd={4}", Server, Port, Database, UserID, UserPassword);
-        public static string[] Tables = { "user" };
+        public static string ConnectionAddr = string.Format("Server={0};Port={1};Database={2};Uid={3};Pwd={4};charset=utf8", Server, Port, Database, UserID, UserPassword);
+        public static string[] Tables = { "user", "question" };
 
         public static DataSet user_ds = null;
+        public static DataSet survey_ds = null;
     }
 }

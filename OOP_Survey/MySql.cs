@@ -70,5 +70,39 @@ namespace OOP_Survey
                 throw;
             }
         }
+
+        public void InsertData(string table, string value)
+        {
+            try
+            {
+                conn.Open();
+                string sql = $"INSERT INTO {table} (userid, data) VALUES ({value})";
+                cmd = new MySqlCommand(sql, conn);
+                cmd.ExecuteNonQuery();
+                conn.Close();
+            }
+            catch (Exception e)
+            {
+                MessageBox.Show(e.ToString());
+                throw;
+            }
+        }
+
+        public void DelData(string table, string value)
+        {
+            try
+            {
+                conn.Open();
+                string sql = $"DELETE FROM {table} WHERE userid = '{value}'";
+                cmd = new MySqlCommand(sql, conn);
+                cmd.ExecuteNonQuery();
+                conn.Close();
+            }
+            catch (Exception e)
+            {
+                MessageBox.Show(e.ToString());
+                throw;
+            }
+        }
     }
 }
