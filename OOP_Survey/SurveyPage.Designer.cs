@@ -34,7 +34,7 @@
             this.metroButton1 = new MetroFramework.Controls.MetroButton();
             this.metroLabel1 = new MetroFramework.Controls.MetroLabel();
             this.metroButton2 = new MetroFramework.Controls.MetroButton();
-            this.button1 = new System.Windows.Forms.Button();
+            this.submit = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // flowLayoutPanel1
@@ -120,15 +120,16 @@
             this.metroButton2.UseSelectable = true;
             this.metroButton2.Click += new System.EventHandler(this.metroButton2_Click);
             // 
-            // button1
+            // submit
             // 
-            this.button1.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.button1.Location = new System.Drawing.Point(20, 694);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(734, 23);
-            this.button1.TabIndex = 11;
-            this.button1.Text = "Submit";
-            this.button1.UseVisualStyleBackColor = true;
+            this.submit.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.submit.Location = new System.Drawing.Point(20, 694);
+            this.submit.Name = "submit";
+            this.submit.Size = new System.Drawing.Size(734, 23);
+            this.submit.TabIndex = 11;
+            this.submit.Text = "Submit";
+            this.submit.UseVisualStyleBackColor = true;
+            this.submit.Click += new System.EventHandler(this.submit_Click);
             // 
             // SurveyPage
             // 
@@ -136,7 +137,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.ClientSize = new System.Drawing.Size(774, 737);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.submit);
             this.Controls.Add(this.flowLayoutPanel1);
             this.Controls.Add(this.metroButton2);
             this.Controls.Add(this.metroLabel1);
@@ -158,6 +159,6 @@
         private MetroFramework.Controls.MetroButton metroButton1;
         private MetroFramework.Controls.MetroLabel metroLabel1;
         private MetroFramework.Controls.MetroButton metroButton2;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button submit;
     }
 }

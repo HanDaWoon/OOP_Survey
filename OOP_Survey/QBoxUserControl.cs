@@ -6,12 +6,10 @@ namespace OOP_Survey
 {
     public partial class QBoxUserControl : UserControl
     {
-        
         public QBoxUserControl(int idx)
         {
             InitializeComponent();
-            QBox.Name = "QBox" + idx;
-            QBox.Text = "Q" + idx;
+
             QIdx.Name = "QIdx" + idx;
             QIdx.Text = idx.ToString();
             QTitle.Name = "QTitle" + idx;

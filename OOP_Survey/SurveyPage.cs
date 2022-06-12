@@ -28,6 +28,7 @@ namespace OOP_Survey
         {
             Qnum++;
             QBoxUserControl qBox = new QBoxUserControl(Qnum);
+            qBox.Name = "QBox" + Qnum;
             flowLayoutPanel1.Controls.Add(qBox);
         }
 
@@ -35,6 +36,12 @@ namespace OOP_Survey
         {
             flowLayoutPanel1.Controls.RemoveAt(Qnum-1);
             Qnum--;
+        }
+
+        private void submit_Click(object sender, EventArgs e)
+        {
+            QBoxUserControl qBoxUserControl = (QBoxUserControl)sender;
+            MessageBox.Show(qBoxUserControl.)
         }
     }
 }
