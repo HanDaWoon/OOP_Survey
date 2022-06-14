@@ -34,9 +34,10 @@
             // 
             // metroButton1
             // 
-            this.metroButton1.Location = new System.Drawing.Point(65, 77);
+            this.metroButton1.Location = new System.Drawing.Point(57, 62);
+            this.metroButton1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.metroButton1.Name = "metroButton1";
-            this.metroButton1.Size = new System.Drawing.Size(201, 48);
+            this.metroButton1.Size = new System.Drawing.Size(176, 38);
             this.metroButton1.TabIndex = 0;
             this.metroButton1.Text = "확인하러 가기";
             this.metroButton1.UseSelectable = true;
@@ -44,9 +45,10 @@
             // 
             // metroButton2
             // 
-            this.metroButton2.Location = new System.Drawing.Point(65, 152);
+            this.metroButton2.Location = new System.Drawing.Point(57, 122);
+            this.metroButton2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.metroButton2.Name = "metroButton2";
-            this.metroButton2.Size = new System.Drawing.Size(201, 48);
+            this.metroButton2.Size = new System.Drawing.Size(176, 38);
             this.metroButton2.TabIndex = 1;
             this.metroButton2.Text = "종료하기";
             this.metroButton2.UseSelectable = true;
@@ -54,13 +56,15 @@
             // 
             // EndF
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(338, 223);
+            this.ClientSize = new System.Drawing.Size(296, 178);
             this.Controls.Add(this.metroButton2);
             this.Controls.Add(this.metroButton1);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "EndF";
-            this.Text = "Form1";
+            this.Padding = new System.Windows.Forms.Padding(18, 48, 18, 16);
+            this.Text = "Create";
             this.ResumeLayout(false);
 
         }

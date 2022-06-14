@@ -60,14 +60,17 @@ namespace OOP_Survey
                             this.Hide();
                             SurveyPage surveyPage = new SurveyPage(id);
                             surveyPage.Show();
+                            return;
                         }
                         else MessageBox.Show("비밀번호가 일치하지 않습니다. 확인 후 다시 입력해주세요.");
                     }
+
                 }
+                MessageBox.Show("사용자 정보가 없습니다.");
             }
             else
             {
-                MessageBox.Show("사용자 정보가 없습니다.");
+                MessageBox.Show("데이터가 없습니다.");
             }
         }
     }
