@@ -49,8 +49,6 @@ namespace OOP_Survey
         private void submit_Click(object sender, EventArgs e)
         {
             string value = $"'{id}', '{CreateJSON()}'";
-            LoginPage._db.InsertData(DBConf.Tables[1], value);
-
             foreach (DataRow row in DBConf.survey_ds.Tables[0].Rows)
             {
                 if (id == row["userid"].ToString())
@@ -59,13 +57,17 @@ namespace OOP_Survey
                 }
             }
             LoginPage._db.InsertData(DBConf.Tables[1], value);
-            MessageBox.Show("Complete");
+            EndF end = new EndF();
+            end.Show();
         }
 
         private string CreateJSON()
         {
             StringBuilder temp = new StringBuilder(50 * flowLayoutPanel1.Controls.Count);
             temp.Append("{ ");
+            temp.Append("\"id\": ");
+            temp.Append("\"" + id + "\"");
+            temp.Append(",");
             temp.Append("\"title\": ");
             temp.Append("\"" + TextBox_title.Text.Replace("\"", "\\\"").Replace("\n", "\\n") + "\"");
             temp.Append(",");
